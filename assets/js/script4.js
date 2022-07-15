@@ -8,14 +8,14 @@ element2.setAttribute('style', 'width: 200px; height: 200px; background-color: g
 element3.setAttribute('style', 'width: 200px; height: 200px; background-color: yellow;')
 element4.setAttribute('style', 'width: 200px; height: 200px; background-color: blue;')
 
-document.addEventListener('keydown', function (e) { 
-    if (e.key.toLowerCase() === 'a') {
+document.addEventListener('keydown', function (event) { 
+    if (event.key.toLowerCase() === 'a') {
      color= 'orange'
-    } else if (e.key.toLowerCase() === 's') { 
+    } else if (event.key.toLowerCase() === 's') { 
       color= 'blue'
-    } else if (e.key.toLowerCase() === 'd'){
+    } else if (event.key.toLowerCase() === 'd'){
         color= 'yellow'
-    } else if (e.key.toLowerCase() === 'f'){
+    } else if (event.key.toLowerCase() === 'f'){
         color = 'pink'
     }
  
