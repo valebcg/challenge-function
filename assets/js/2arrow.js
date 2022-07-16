@@ -1,1 +1,1 @@
-suma = (a, b) => a + b
+let suma = (a, b) => a + b

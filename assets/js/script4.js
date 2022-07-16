@@ -21,8 +21,10 @@ document.addEventListener('keydown', function (event) {
  
 })
 
-    element1.addEventListener ('click', () => element1.style.backgroundColor= color)
-    element2.addEventListener ('click', () => element2.style.backgroundColor= color)
-    element3.addEventListener ('click', () => element3.style.backgroundColor= color)
-    element4.addEventListener ('click', () => element4.style.backgroundColor= color)
+    let setColor = (element) => {
+  element.addEventListener('click', () => {
+    document.querySelector('#' + element.id).style.backgroundColor = color
+  })
+}
+setColor(element1),setColor(element2),setColor(element3),setColor(element4)
 
